@@ -109,8 +109,8 @@
     /* color-1(#11ABB0)
      * color-2(#F06000)
      */
-    --color-1: rgb(0, 140, 240);
-    --color-2: rgb(0, 140, 240);
+    --color-1: rgb(238, 99, 48);
+    --color-2: rgb(238, 99, 48);
 
     /* theme color variations
      */
@@ -1606,7 +1606,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-    color: var(--color-1);
+    color: rgb(218, 218, 218);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -1644,7 +1644,7 @@ h1, h2, h3, h4, h5, h6,
     font-family: var(--font-3);
     font-weight: 600;
     font-style: normal;
-    color: var(--color-text-dark);
+    color: var(--color-text-light);
     -webkit-font-variant-ligatures: common-ligatures;
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
@@ -1653,6 +1653,7 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
     margin-top: var(--vspace-3);
     margin-bottom: var(--vspace-0_75);
+    
 }
 
 h2, .h2, h3, .h3, h4, .h4 {
@@ -1675,6 +1676,7 @@ h1, .h1 {
     h1, .h1 {
         font-size: var(--text-xxxl);
         line-height: var(--vspace-1_75);
+        
     }
 }
 
@@ -1887,6 +1889,7 @@ ol {
 
 ul {
     list-style: disc;
+    color: #c06912;
 }
 
 li {
@@ -1902,7 +1905,7 @@ ul li {
 }
 
 ul ul, ul ol, ol ol, ol ul {
-    margin: 1.6rem 0 1.6rem 1.6rem;
+    margin: 0.6rem 0 0.6rem 0.6rem;
 }
 
 ul.disc li {
@@ -3376,12 +3379,12 @@ input[type="button"].btn--primary:focus {
     }
     .s-header__nav ul li {
         display: block;
-        border-bottom: 1px dotted rgba(255, 255, 255, 0.06);
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.9);
         position: relative;
     }
     .s-header__nav ul li a {
         height: auto;
-        padding: var(--vspace-0_5) 0.4rem var(--vspace-0_5) 2.8rem;
+        padding: var(--vspace-0_5) 0.4rem var(--vspace-0_5) 0.4rem;
         line-height: var(--vspace-1);
         color: white;
     }
@@ -3389,7 +3392,7 @@ input[type="button"].btn--primary:focus {
         content: counter(ctr, decimal-leading-zero);
         counter-increment: ctr;
         font-size: var(--text-xs);
-        color: rgba(255, 255, 255, 0.18);
+        color: rgba(255, 255, 255, 0.8);
         position: absolute;
         top: var(--vspace-0_5);
         left: 0;
@@ -3501,17 +3504,17 @@ input[type="button"].btn--primary:focus {
     -webkit-box-align: center;
     align-items: center;
     text-align: center;
-    padding-top: 16vh;
+    padding-top: 0vh;
     padding-bottom: 12vh;
     position: relative;
 }
 
 .s-hero__content h1 {
     font-size: 9.8rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -.04em;
     line-height: 1;
-    color: white;
+    color: rgb(238, 99, 48);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -3823,7 +3826,7 @@ input[type="button"].btn--primary:focus {
     background-color: white;
      /* background-image: url(../images/header-bg-3000.jpg); */
     border-color: white;
-    color: black;
+    color: rgb(24, 24, 24);
     margin-right: 0;
 }
 
@@ -3895,9 +3898,9 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-resume {
-    background-color: white;
-    padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-4);
+    background-color: #dddcdb;
+    padding-top: calc(2 * var(--space));
+    padding-bottom: var(--vspace-2_5);
 }
 
 .s-resume__section {
@@ -3945,7 +3948,7 @@ input[type="button"].btn--primary:focus {
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: .12em;
-    color: var(--color-text-light);
+    color: rgb(24, 24, 24);
 }
 
 .resume-block__header-date::before {
@@ -4406,8 +4409,8 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: var(--color-gray-18);
-    padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-3_5);
+    padding-top: calc(2 * var(--space));
+    padding-bottom: var(--vspace-1_5);
 }
 
 .s-contact .section-header-allcaps {
@@ -4419,7 +4422,7 @@ input[type="button"].btn--primary:focus {
     color: white;
     margin-top: 0;
     font-weight: 400;
-    font-size: 4.6rem;
+    font-size: 2.6rem;
     line-height: 1.304;
 }
 
